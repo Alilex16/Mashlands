@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_trident_storm",
+    "nameTerm": "mashlands_weapon_trident_storm_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "spear, mashlands_resource_mithril_bar, magic_dust, smithy",
+        "ResultCard": "mashlands_weapon_trident_storm",
+        "Time": 20,
+        "StatusTerm": "mashlands_weapon_trident_storm_status"
+      }
+    ]
+  }

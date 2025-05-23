@@ -1,0 +1,30 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_trident_storm",
+    "nameTerm": "mashlands_weapon_trident_storm_name",
+    "descriptionTerm": "mashlands_weapon_trident_storm_description",
+    "icon": "trident_storm.png",
+    "value": 10,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Magic",
+    "_VillagerTypeOverride": "mage",
+    "_MyStats": {
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 2, 
+        "AttackDamageIncrement": 2,
+        "SpecialHits": [
+            {
+                "Chance": 10.0,
+                "HitType": 2,
+                "Target": 1
+            },
+            {
+                "Chance": 15.0,
+                "HitType": 8,
+                "Target": 5
+            }
+        ]
+    }
+}

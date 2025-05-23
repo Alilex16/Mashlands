@@ -1,0 +1,10 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_resource_mithril_bar",
+    "nameTerm": "mashlands_resource_mithril_bar_name",
+    "descriptionTerm": "mashlands_resource_mithril_bar_description",
+    "icon": "mithril_bar.png",
+    "value": 7,
+    "type": "Resources",
+    "script": "Resource"
+}

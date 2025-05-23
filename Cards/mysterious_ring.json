@@ -1,0 +1,27 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_mysterious_ring",
+    "nameTerm": "mashlands_weapon_mysterious_ring_name",
+    "descriptionTerm": "mashlands_weapon_mysterious_ring_description",
+    "icon": "mysterious_ring.png",
+    "value": 12,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Magic",
+    "_VillagerTypeOverride": "mage",
+    "_MyStats": {
+        "MaxHealth": 10,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 1,
+        "SpecialHits": [
+            {
+                "Chance": 10.0,
+                "HitType": 5,
+                "Target": 3
+            }
+        ]
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_location_castle_ruins",
+    "nameTerm": "mashlands_location_castle_ruins_name",
+    "descriptionTerm": "mashlands_location_castle_ruins_description",
+    "icon": "castle_ruins.png",
+    "value": 5,
+    "type": "Locations",
+    "script": "Harvestable",
+    "_StatusTerm": "mashlands_location_castle_ruins_status",
+    "_IsUnlimited": 1,
+    "_HarvestTime": 60.0,
+    "_MyCardBag":
+    {
+        "CardBagType": 0,
+        "CardsInPack": 1,
+        "Chances": [
+            {
+                "Id": "mashlands_resource_leather",
+                "Chance": 12,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_resource_steel_bar",
+                "Chance": 10,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "flint",
+                "Chance": 15,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "brick",
+                "Chance": 18,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "skeleton",
+                "Chance": 6,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "dark_elf",
+                "Chance": 6,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_enemy_necromancer",
+                "Chance": 3,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_jeweled_crown",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_ranger_hat",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_parrying_dagger",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_golden_shield",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_tower_shield",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_banner",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_greatsword",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_guillotine",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            }
+        ]
+    },
+    "RequiredVillagerCount": 1
+}
+  

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_diamond",
+    "nameTerm": "mashlands_resource_diamond_name",
+    "group": "Resources",
+    "subprints": [
+        {
+          "RequiredCards": "charcoal, charcoal, charcoal, charcoal, charcoal, charcoal, charcoal, charcoal, charcoal, charcoal, mashlands_structure_pressure_chamber",
+          "ResultCard": "mashlands_resource_diamond",
+          "Time": 180,
+          "StatusTerm": "mashlands_pressure_chamber_status"
+        }
+    ]
+}

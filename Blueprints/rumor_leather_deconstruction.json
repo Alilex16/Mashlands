@@ -1,0 +1,45 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_leather",
+    "nameTerm": "mashlands_resource_leather_deconstruction_name",
+    "group": "Basic",
+    "hideFromIdeasTab": true,
+    "hideFromCardopedia": true,
+    "subprints": [
+        {
+            "RequiredCards": "bunny_hat, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_resource_leather",
+            "ExtraResultCards": "rope",
+            "Time": 15,
+            "StatusTerm": "mashlands_resource_leather_status"
+        },
+        {
+            "RequiredCards": "tiger_fur_coat, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_resource_leather",
+            "ExtraResultCards": "mashlands_resource_leather",
+            "Time": 15,
+            "StatusTerm": "mashlands_resource_leather_status"
+        },
+        {
+            "RequiredCards": "leather_tunic, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_resource_leather",
+            "ExtraResultCards": "mashlands_resource_leather",
+            "Time": 15,
+            "StatusTerm": "mashlands_resource_leather_status"
+        },
+        {
+            "RequiredCards": "pirate_hat, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_resource_leather",
+            "ExtraResultCards": "fabric",
+            "Time": 15,
+            "StatusTerm": "mashlands_resource_leather_status"
+        },
+        {
+            "RequiredCards": "quiver, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_resource_leather",
+            "ExtraResultCards": "rope",
+            "Time": 15,
+            "StatusTerm": "mashlands_resource_leather_status"
+        }
+    ]
+}

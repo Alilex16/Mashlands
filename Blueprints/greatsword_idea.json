@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_greatsword",
+    "nameTerm": "mashlands_weapon_greatsword_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "stick, stick, mashlands_resource_steel_bar, mashlands_resource_steel_bar, smithy",
+        "ResultCard": "mashlands_weapon_greatsword",
+        "Time": 20,
+        "StatusTerm": "mashlands_weapon_greatsword_status"
+      }
+    ]
+  }

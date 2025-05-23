@@ -1,0 +1,30 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_jeweled_crown",
+    "nameTerm": "mashlands_head_jeweled_crown_name",
+    "descriptionTerm": "mashlands_head_jeweled_crown_description",
+    "icon": "jeweled_crown.png",
+    "value": 30,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": 10,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 1,
+        "SpecialHits": [
+            {
+                "Chance": 10.0,
+                "HitType": 3,
+                "Target": 0
+            },
+            {
+                "Chance": 10.0,
+                "HitType": 9,
+                "Target": 2
+            }
+        ]
+    }
+}

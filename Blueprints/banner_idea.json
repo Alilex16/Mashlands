@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_banner",
+    "nameTerm": "mashlands_weapon_banner_name",
+    "group": "Military",
+    "subprints": [
+        {
+          "RequiredCards": "stick, stick, fabric, smithy",
+          "ResultCard": "mashlands_weapon_banner",
+          "Time": 15,
+          "StatusTerm": "mashlands_weapon_banner_status"
+        }
+    ]
+}

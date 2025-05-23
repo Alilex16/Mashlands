@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_body_golden_shield",
+    "nameTerm": "mashlands_body_golden_shield_name",
+    "descriptionTerm": "mashlands_body_golden_shield_description",
+    "icon": "golden_shield.png",
+    "value": 5,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Torso",
+    "_MyStats": {
+        "MaxHealth": 0,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 1, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 2,
+        "SpecialHits": [
+            {
+                "Chance": 10.0,
+                "HitType": 9,
+                "Target": 2
+            }
+        ]
+    }
+}

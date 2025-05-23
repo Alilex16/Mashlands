@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_crusher",
+    "nameTerm": "mashlands_structure_crusher_name",
+    "group": "Building",
+    "subprints": [
+        {
+          "RequiredCards": "iron_bar, iron_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, builder",
+          "ResultCard": "mashlands_structure_crusher",
+          "Time": 30,
+          "StatusTerm": "mashlands_structure_crusher_status"
+        }
+    ]
+}

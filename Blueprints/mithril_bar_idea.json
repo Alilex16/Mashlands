@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_mithril_bar",
+    "nameTerm": "mashlands_resource_mithril_bar_name",
+    "group": "Resources",
+    "subprints": [
+      {
+        "RequiredCards": "iron_bar, magic_dust",
+        "ResultCard": "mashlands_resource_mithril_bar",
+        "Time": 20,
+        "StatusTerm": "mashlands_resource_mithril_bar_status"
+      }
+    ]
+  }

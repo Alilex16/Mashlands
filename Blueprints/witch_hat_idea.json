@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_head_witch_hat",
+    "nameTerm": "mashlands_head_witch_hat_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "mashlands_resource_leather, mashlands_resource_leather, magic_dust, smithy",
+        "ResultCard": "mashlands_head_witch_hat",
+        "Time": 10,
+        "StatusTerm": "mashlands_head_witch_hat_status"
+      }
+    ]
+  }

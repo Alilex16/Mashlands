@@ -1,0 +1,131 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_wandering_trader",
+    "nameTerm": "mashlands_wandering_trader_name",
+    "descriptionTerm": "mashlands_wandering_trader_description",
+    "icon": "wandering_trader.png",
+    "value": -1,
+    "type": "Harvestable",
+    "script": "TestingModNS.WanderingTrader",
+    "_MyCardBag":
+    {
+        "CardBagType": 0,
+        "CardsInPack": 10,
+        "Chances": [
+            {
+                "Id": "mashlands_resource_mithril_bar",
+                "Chance": 8,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_resource_steel_bar",
+                "Chance": 9,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "gold_bar",
+                "Chance": 11,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_weapon_banner",
+                "Chance": 2,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_weapon_composite_bow",
+                "Chance": 2,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_body_parrying_dagger",
+                "Chance": 2,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_head_ranger_hat",
+                "Chance": 2,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "chainmail_armor",
+                "Chance": 3,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "bear_claw",
+                "Chance": 1,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "dark_amulet",
+                "Chance": 1,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_lucky_goggles",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_rumor_leather_deconstruction",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_rumor_library",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_rumor_secret_hideout",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            }
+        ]
+    },
+    "_GoldToUse": 8,
+    "_ItemsBought": 0
+}

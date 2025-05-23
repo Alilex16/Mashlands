@@ -1,0 +1,20 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_body_parrying_dagger",
+    "nameTerm": "mashlands_body_parrying_dagger_name",
+    "descriptionTerm": "mashlands_body_parrying_dagger_description",
+    "icon": "parrying_dagger.png",
+    "value": 3,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Torso",
+    "_MyStats": {
+        "MaxHealth": 0,
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 1, 
+        "AttackDamageIncrement": 1,
+        "DefenceIncrement": 1,
+        "SpecialHits": [
+        ]
+    }
+}

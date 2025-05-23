@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_flint",
+    "nameTerm": "card_flint_name",
+    "group": "Resources",
+    "subprints": [
+        {
+          "RequiredCards": "stone, mashlands_structure_pressure_chamber",
+          "ResultCard": "flint",
+          "Time": 5,
+          "StatusTerm": "mashlands_pressure_chamber_status"
+        }
+    ]
+}

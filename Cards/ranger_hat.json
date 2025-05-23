@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_ranger_hat",
+    "nameTerm": "mashlands_head_ranger_hat_name",
+    "descriptionTerm": "mashlands_head_ranger_hat_description",
+    "icon": "ranger_hat.png",
+    "value": 5,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": 0,
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 1, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 20.0,
+                "HitType": 7,
+                "Target": 0
+            }
+        ]
+    }
+}

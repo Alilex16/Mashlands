@@ -1,0 +1,102 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_enemy_necromancer",
+    "nameTerm": "mashlands_enemy_necromancer_name",
+    "descriptionTerm": "mashlands_enemy_necromancer_description",
+    "icon": "necromancer_enemy.png",
+    "value": -1,
+    "type": "Enemy",
+    "script": "Enemy",
+
+    "_MoveTime": 1,
+    "_IsAggressive": 1,
+    "_AlwaysDrop": 0,
+    
+    "_Drops":
+    {
+        "CardBagType": 0,
+        "CardsInPack": 3,
+        "Chances": [
+            {
+                "Id": "magic_dust",
+                "Chance": 92,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "old_tome",
+                "Chance": 2,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_head_necromancer_hood",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_mysterious_gem",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_mysterious_amulet",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "mashlands_blueprint_mysterious_ring",
+                "Chance": 5,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            }
+        ]
+    },
+    "_CanHaveInventory": 1,
+    "_CanAttack": 1,
+    "_PossibleEquipableIds": [
+        "mashlands_head_necromancer_hood",
+        "staff_of_fear",
+        "bone_staff",
+        "magic_ring",
+        "wizard_robe",
+        "dark_amulet"
+    ],
+
+    "_BaseAttackType": 3,
+    "_BaseCombatStats": {
+        "MaxHealth": 120,
+        "AttackSpeed": 1.5,
+        "HitChance": 0.8,
+        "AttackDamage": 3,
+        "Defence": 2,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 5,
+                "Target": 1
+            },
+            {
+                "Chance": 5.0,
+                "HitType": 5,
+                "Target": 5
+            }
+        ]
+    },
+    "_HealthPoints": 120
+}

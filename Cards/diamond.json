@@ -1,0 +1,18 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_resource_diamond",
+    "nameTerm": "mashlands_resource_diamond_name",
+    "descriptionTerm": "mashlands_resource_diamond_description",
+    "icon": "diamond.png",
+    "value": 6,
+    "type": "Resources",
+    "script": "Resource",
+    "_IsFoil": true,
+    "_IsShiny": true,
+    "_HasUniquePalette": true,
+    "_MyPalette": {
+      "Color": "#99fff9",
+      "Color2": "#66ccc6",
+      "Icon": "#000000"
+  }
+}

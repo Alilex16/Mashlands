@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_executing_villager",
+    "nameTerm": "mashlands_executing_villager_name",
+    "group": "Basic",
+    "subprints": [
+        {
+            "RequiredCards": "any_villager, mashlands_structure_guillotine",
+            "CardsToRemove": "",
+            "ResultCard": "corpse",
+            "Time": 99
+        }
+    ]
+}

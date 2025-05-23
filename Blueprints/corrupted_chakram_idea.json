@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_corrupted_chakram",
+    "nameTerm": "mashlands_weapon_corrupted_chakram_name",
+    "group": "Military",
+    "subprints": [
+        {
+          "RequiredCards": "mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_bone_dust, mashlands_resource_bone_dust, smithy",
+          "ResultCard": "mashlands_weapon_corrupted_chakram",
+          "Time": 20,
+          "StatusTerm": "mashlands_weapon_corrupted_chakram_status"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_mysterious_ring",
+    "nameTerm": "mashlands_weapon_mysterious_ring_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "mashlands_resource_mithril_bar, mashlands_resource_mysterious_gem, smithy",
+        "ResultCard": "mashlands_weapon_mysterious_ring",
+        "Time": 25,
+        "StatusTerm": "mashlands_weapon_mysterious_ring_status"
+      }
+    ]
+  }

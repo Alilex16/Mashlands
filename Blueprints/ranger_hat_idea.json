@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_ranger_hat",
+    "nameTerm": "mashlands_head_ranger_hat_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "mashlands_resource_leather, mashlands_resource_leather, rope, smithy",
+        "ResultCard": "mashlands_head_ranger_hat",
+        "Time": 10,
+        "StatusTerm": "mashlands_head_ranger_hat_status"
+      }
+    ]
+  }

@@ -1,0 +1,17 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_decompose_corpse",
+    "nameTerm": "mashlands_resource_decompose_corpse_name",
+    "group": "Basic",
+    "hideFromIdeasTab": true,
+    "hideFromCardopedia": true,
+    "subprints": [
+        {
+          "RequiredCards": "corpse, mashlands_structure_pressure_chamber",
+          "ResultCard": "bone",
+          "ExtraResultCards": "goop",
+          "Time": 60,
+          "StatusTerm": "mashlands_rumor_decompose_corpse_status"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_steel_bar",
+    "nameTerm": "mashlands_resource_steel_bar_name",
+    "group": "Resources",
+    "subprints": [
+        {
+            "RequiredCards": "iron_bar, charcoal, mashlands_structure_pressure_chamber",
+            "ResultCard": "mashlands_resource_steel_bar",
+            "Time": 15,
+            "StatusTerm": "mashlands_pressure_chamber_status"
+        }
+   ]
+}

@@ -1,0 +1,10 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_resource_mysterious_gem",
+    "nameTerm": "mashlands_resource_mysterious_gem_name",
+    "descriptionTerm": "mashlands_resource_mysterious_gem_description",
+    "icon": "mysterious_gem.png",
+    "value": 15,
+    "type": "Resources",
+    "script": "Resource"
+}

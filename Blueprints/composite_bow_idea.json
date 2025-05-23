@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_composite_bow",
+    "nameTerm": "mashlands_weapon_composite_bow_name",
+    "group": "Military",
+    "subprints": [
+        {
+          "RequiredCards": "plank, rope, mashlands_resource_steel_bar, smithy",
+          "ResultCard": "mashlands_weapon_composite_bow",
+          "Time": 20,
+          "StatusTerm": "mashlands_weapon_composite_bow_status"
+        }
+    ]
+}

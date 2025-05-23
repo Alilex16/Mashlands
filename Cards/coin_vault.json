@@ -1,0 +1,12 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_coin_vault",
+    "nameTerm": "mashlands_structure_coin_vault_name",
+    "descriptionTerm": "mashlands_structure_coin_vault_description",
+    "icon": "coin_vault.png",
+    "value": 0,
+    "type": "Structures",
+    "PickupSoundGroup": "Heavy",
+    "script": "TestingModNS.CoinVault",
+    "_IsBuilding": true
+}

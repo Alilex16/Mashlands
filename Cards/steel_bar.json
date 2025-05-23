@@ -1,0 +1,10 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_resource_steel_bar",
+    "nameTerm": "mashlands_resource_steel_bar_name",
+    "descriptionTerm": "mashlands_resource_steel_bar_description",
+    "icon": "steel_bar.png",
+    "value": 6,
+    "type": "Resources",
+    "script": "Resource"
+}

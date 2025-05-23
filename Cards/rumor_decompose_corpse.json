@@ -1,0 +1,13 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_rumor_decompose_corpse",
+    "nameTerm": "mashlands_resource_decompose_corpse_name",
+    "descriptionTerm": "mashlands_rumor_decompose_corpse_description",
+    "hideFromCardopedia": false,
+    "icon": "rumor_island",
+    "value": 1,
+    "type": "Rumors",
+    "script": "Rumor",
+    "_KnowledgeGroup": "Important"
+  }
+  

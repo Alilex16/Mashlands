@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_lucky_goggles",
+    "nameTerm": "mashlands_head_lucky_goggles_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "glass, glass, copper_bar, mashlands_resource_leather, smithy",
+        "ResultCard": "mashlands_head_lucky_goggles",
+        "Time": 15,
+        "StatusTerm": "mashlands_head_lucky_goggles_status"
+      }
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_mysterious_amulet",
+    "nameTerm": "mashlands_head_mysterious_amulet_name",
+    "descriptionTerm": "mashlands_head_mysterious_amulet_description",
+    "icon": "mysterious_amulet.png",
+    "value": 12,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": 10,
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 1,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 7,
+                "Target": 2
+            }
+        ]
+    }
+}

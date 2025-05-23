@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_mysterious_amulet",
+    "nameTerm": "mashlands_head_mysterious_amulet_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "gold_bar, mashlands_resource_steel_bar, mashlands_resource_mysterious_gem, smithy",
+        "ResultCard": "mashlands_head_mysterious_amulet",
+        "Time": 10,
+        "StatusTerm": "mashlands_head_mysterious_amulet_status"
+      }
+    ]
+  }

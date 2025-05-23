@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_pressure_chamber",
+    "nameTerm": "mashlands_structure_pressure_chamber_name",
+    "group": "Building",
+    "subprints": [
+      {
+        "RequiredCards": "mashlands_resource_mithril_bar, mashlands_resource_mithril_bar, mashlands_resource_mithril_bar, mashlands_resource_mithril_bar, mashlands_resource_mithril_bar, builder",
+        "ResultCard": "mashlands_structure_pressure_chamber",
+        "Time": 50,
+        "StatusTerm": "mashlands_structure_pressure_chamber_status"
+      }
+    ]
+  }

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_golden_shield",
+    "nameTerm": "mashlands_body_golden_shield_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "gold_bar, plank, smithy",
+        "ResultCard": "mashlands_body_golden_shield",
+        "Time": 15,
+        "StatusTerm": "mashlands_body_golden_shield_status"
+      }
+    ]
+  }

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_parrying_dagger",
+    "nameTerm": "mashlands_body_parrying_dagger_name",
+    "group": "Military",
+    "subprints": [
+        {
+            "RequiredCards": "stick, iron_bar, smithy",
+            "ResultCard": "mashlands_body_parrying_dagger",
+            "Time": 15,
+            "StatusTerm": "mashlands_body_parrying_dagger_status"
+        }
+    ]
+}

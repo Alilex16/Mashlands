@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_crusher",
+    "nameTerm": "mashlands_structure_crusher_name",
+    "descriptionTerm": "mashlands_structure_crusher_description",
+    "icon": "crusher.png",
+    "value": 8,
+    "type": "Structures",
+    "script": "TestingModNS.Crusher",
+    "_IsBuilding": true
+}

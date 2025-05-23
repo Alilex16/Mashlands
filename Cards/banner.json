@@ -1,0 +1,37 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_banner",
+    "nameTerm": "mashlands_weapon_banner_name",
+    "descriptionTerm": "mashlands_weapon_banner_description",
+    "icon": "banner.png",
+    "value": 5,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Melee",
+    "_VillagerTypeOverride": "villager",
+    "_MyStats": {
+        "MaxHealth": 5,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 1,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 7,
+                "Target": 2
+            },
+            {
+                "Chance": 5.0,
+                "HitType": 9,
+                "Target": 2
+            },
+            {
+                "Chance": 5.0,
+                "HitType": 3,
+                "Target": 2
+            }
+        ]
+    }
+}

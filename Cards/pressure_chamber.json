@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_pressure_chamber",
+    "nameTerm": "mashlands_structure_pressure_chamber_name",
+    "descriptionTerm": "mashlands_structure_pressure_chamber_description",
+    "icon": "pressure_chamber.png",
+    "value": 8,
+    "type": "Structures",
+    "script": "TestingModNS.PressureChamber",
+    "_IsBuilding": true
+}

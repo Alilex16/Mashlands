@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_deconstruction_table",
+    "nameTerm": "mashlands_structure_deconstruction_table_name",
+    "descriptionTerm": "mashlands_structure_deconstruction_table_description",
+    "icon": "deconstruction_table.png",
+    "value": 7,
+    "type": "Structures",
+    "script": "TestingModNS.DeconstructionTable",
+    "_IsBuilding": true
+}

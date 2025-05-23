@@ -1,0 +1,13 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_rumor_library",
+    "nameTerm": "mashlands_structure_library_name",
+    "descriptionTerm": "mashlands_rumor_library_description",
+    "hideFromCardopedia": false,
+    "icon": "rumor_island",
+    "value": 1,
+    "type": "Rumors",
+    "script": "Rumor",
+    "_KnowledgeGroup": "Basic"
+  }
+  

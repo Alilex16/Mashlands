@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_body_steel_chainplate",
+    "nameTerm": "mashlands_body_steel_chainplate_name",
+    "descriptionTerm": "mashlands_body_steel_chainplate_description",
+    "icon": "steel_chainplate.png",
+    "value": 9,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Torso",
+    "_MyStats": {
+        "MaxHealth": 10,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 3,
+        "SpecialHits": [
+            {
+                "Chance": 5.0,
+                "HitType": 2,
+                "Target": 1
+            }
+        ]
+    }
+}

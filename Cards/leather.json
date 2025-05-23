@@ -1,0 +1,10 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_resource_leather",
+    "nameTerm": "mashlands_resource_leather_name",
+    "descriptionTerm": "mashlands_resource_leather_description",
+    "icon": "leather.png",
+    "value": 3,
+    "type": "Resources",
+    "script": "Resource"
+}

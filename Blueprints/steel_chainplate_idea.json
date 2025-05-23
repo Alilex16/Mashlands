@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_steel_chainplate",
+    "nameTerm": "mashlands_body_steel_chainplate_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "chainmail_armor, mashlands_resource_steel_bar, mashlands_resource_steel_bar, smithy",
+        "ResultCard": "mashlands_body_steel_chainplate",
+        "Time": 15,
+        "StatusTerm": "mashlands_body_steel_chainplate_status"
+      }
+    ]
+  }

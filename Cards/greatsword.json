@@ -1,0 +1,31 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_greatsword",
+    "nameTerm": "mashlands_weapon_greatsword_name",
+    "descriptionTerm": "mashlands_weapon_greatsword_description",
+    "icon": "greatsword.png",
+    "value": 8,
+    "type": "Equipable",
+    "PickupSoundGroup": "Heavy",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Melee",
+    "_VillagerTypeOverride": "swordsman",
+    "_MyStats": {
+        "AttackSpeedIncrement": -2,
+        "HitChanceIncrement": 1, 
+        "AttackDamageIncrement": 5,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 6,
+                "Target": 1
+            },
+            {
+                "Chance": 10.0,
+                "HitType": 10,
+                "Target": 1
+            }
+        ]
+    }
+}

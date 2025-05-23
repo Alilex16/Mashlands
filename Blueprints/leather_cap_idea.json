@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_leather_cap",
+    "nameTerm": "mashlands_head_leather_cap_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "mashlands_resource_leather, mashlands_resource_leather, mashlands_resource_leather, smithy",
+        "ResultCard": "mashlands_head_leather_cap",
+        "Time": 10,
+        "StatusTerm": "mashlands_head_leather_cap_status"
+      }
+    ]
+  }

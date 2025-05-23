@@ -1,0 +1,43 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_animal_guinea_pig",
+    "nameTerm": "mashlands_animal_guinea_pig_name",
+    "descriptionTerm": "mashlands_animal_guinea_pig_description",
+    "icon": "guinea_pig.png",
+    "value": -1,
+    "type": "Mobs",
+    "script": "TestingModNS.GuineaPig",
+
+    "_IsBreedable": true,
+    "_MoveTime": -1,
+
+    "_AlwaysDrop": false,
+    "_Drops":
+    {
+        "CardBagType": "Chances",
+        "CardsInPack": 1,
+        "Chances": [
+            {
+                "Id": "poop",
+                "Chance": 3
+            },
+            {
+                "Id": "bone",
+                "Chance": 1
+            },
+            {
+                "Id": "raw_meat",
+                "Chance": 1
+            }
+        ]
+    },
+
+    "_BaseCombatStats": {
+        "MaxHealth": 3,
+        "AttackSpeed": 1.5,
+        "HitChance": 0.6,
+        "AttackDamage": 1,
+        "Defence": 0,
+        "SpecialHits": []
+    }
+}

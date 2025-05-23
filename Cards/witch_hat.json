@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_witch_hat",
+    "nameTerm": "mashlands_head_witch_hat_name",
+    "descriptionTerm": "mashlands_head_witch_hat_description",
+    "icon": "witch_hat.png",
+    "value": 4,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": 3,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 2, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 10.0,
+                "HitType": 3,
+                "Target": 0
+            }
+        ]
+    }
+}

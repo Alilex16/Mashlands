@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_leather_cap",
+    "nameTerm": "mashlands_head_leather_cap_name",
+    "descriptionTerm": "mashlands_head_leather_cap_description",
+    "icon": "leather_cap.png",
+    "value": 4,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": 3,
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 1,
+        "SpecialHits": [
+            {
+                "Chance": 5.0,
+                "HitType": 2,
+                "Target": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_tower_shield",
+    "nameTerm": "mashlands_body_tower_shield_name",
+    "group": "Military",
+    "subprints": [
+        {
+          "RequiredCards": "iron_shield, plank, mashlands_resource_steel_bar, mashlands_resource_steel_bar, smithy",
+          "ResultCard": "mashlands_body_tower_shield",
+          "Time": 15,
+          "StatusTerm": "mashlands_body_tower_shield_status"
+        }
+    ]
+}

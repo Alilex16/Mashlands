@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_body_spiked_shield",
+    "nameTerm": "mashlands_body_spiked_shield_name",
+    "descriptionTerm": "mashlands_body_spiked_shield_description",
+    "icon": "spiked_shield.png",
+    "value": 4,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Torso",
+    "_MyStats": {
+        "MaxHealth": 0,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 1,
+        "DefenceIncrement": 2,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 6,
+                "Target": 1
+            }
+        ]
+    }
+}

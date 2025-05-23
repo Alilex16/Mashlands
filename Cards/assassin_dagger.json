@@ -1,0 +1,26 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_assassin_dagger",
+    "nameTerm": "mashlands_weapon_assassin_dagger_name",
+    "descriptionTerm": "mashlands_weapon_assassin_dagger_description",
+    "icon": "assassin_dagger.png",
+    "value": 3,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Melee",
+    "_VillagerTypeOverride": "ninja",
+    "_MyStats": {
+        "MaxHealth": -4,
+        "AttackSpeedIncrement": 2,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 1,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 6,
+                "Target": 1
+            }
+        ]
+    }
+}

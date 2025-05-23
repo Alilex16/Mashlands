@@ -1,0 +1,37 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_corrupted_chakram",
+    "nameTerm": "mashlands_weapon_corrupted_chakram_name",
+    "descriptionTerm": "mashlands_weapon_corrupted_chakram_description",
+    "icon": "corrupted_chakram.png",
+    "value": 6,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Ranged",
+    "_VillagerTypeOverride": "ninja",
+    "_MyStats": {
+        "MaxHealth": -3,
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 0, 
+        "AttackDamageIncrement": 2,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 5.0,
+                "HitType": 7,
+                "Target": 0
+            },
+            {
+                "Chance": 5.0,
+                "HitType": 10,
+                "Target": 1
+            },
+            {
+                "Chance": 10.0,
+                "HitType": 5,
+                "Target": 1
+            }
+        ]
+    }
+}

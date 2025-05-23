@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_deconstruction_table",
+    "nameTerm": "mashlands_structure_deconstruction_table_name",
+    "group": "Building",
+    "subprints": [
+        {
+          "RequiredCards": "plank, plank, plank, mashlands_resource_steel_bar, mashlands_resource_steel_bar, builder",
+          "ResultCard": "mashlands_structure_deconstruction_table",
+          "Time": 30,
+          "StatusTerm": "mashlands_structure_deconstruction_table_status"
+        }
+    ]
+}

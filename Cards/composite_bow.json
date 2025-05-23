@@ -1,0 +1,27 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_weapon_composite_bow",
+    "nameTerm": "mashlands_weapon_composite_bow_name",
+    "descriptionTerm": "mashlands_weapon_composite_bow_description",
+    "icon": "composite_bow.png",
+    "value": 5,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Weapon",
+    "_AttackType": "Ranged",
+    "_VillagerTypeOverride": "archer",
+    "_MyStats": {
+        "MaxHealth": 0,
+        "AttackSpeedIncrement": 1,
+        "HitChanceIncrement": 1, 
+        "AttackDamageIncrement": 2,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 10,
+                "Target": 1
+            }
+        ]
+    }
+}

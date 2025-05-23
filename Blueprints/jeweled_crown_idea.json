@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_jeweled_crown",
+    "nameTerm": "mashlands_head_jeweled_crown_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "gold_bar, gold_bar, mashlands_resource_diamond, smithy",
+        "ResultCard": "mashlands_head_jeweled_crown",
+        "Time": 10,
+        "StatusTerm": "mashlands_head_jeweled_crown_status"
+      }
+    ]
+  }

@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_distribution_centre",
+    "nameTerm": "mashlands_structure_distribution_centre_name",
+    "descriptionTerm": "mashlands_structure_distribution_centre_description",
+    "icon": "distribution_centre.png",
+    "value": 18,
+    "type": "Structures",
+    "script": "TestingModNS.DistributionCentre",
+    "_IsBuilding": true
+}

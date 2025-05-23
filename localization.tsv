@@ -1,0 +1,126 @@
+Term	Notes	English
+action_executing_villager_status		Execution in progress..
+action_library_status		Reading
+action_petting_guinea_pig_status		Received pets
+mashlands_executing_villager_name		Execution
+mashlands_animal_guinea_pig_name		Guinea Pig
+mashlands_animal_guinea_pig_description		This floof needs some good petting
+mashlands_body_golden_shield_name		Golden Shield
+mashlands_body_golden_shield_description		A bright and expensive-looking shield
+mashlands_body_golden_shield_status		Creating Golden Shield
+mashlands_body_parrying_dagger_name		Parrying dagger
+mashlands_body_parrying_dagger_description		Off-hand dagger
+mashlands_body_parrying_dagger_status		Creating Parrying dagger
+mashlands_body_spiked_shield_name		Spiked Shield
+mashlands_body_spiked_shield_description		Hurts to hit
+mashlands_body_spiked_shield_status		Creating Spiked Shield
+mashlands_body_steel_chainplate_name		Steel Chainplate
+mashlands_body_steel_chainplate_description		Sturdier than a Chainmail
+mashlands_body_steel_chainplate_status		Creating Steel Chainplate
+mashlands_body_tower_shield_name		Tower Shield
+mashlands_body_tower_shield_description		It's really quite big
+mashlands_body_tower_shield_status		Creating Tower Shield
+mashlands_enemy_necromancer_name		Necromancer
+mashlands_enemy_necromancer_description		A very strong wizard that uses dark magic
+mashlands_head_jeweled_crown_name		Jeweled Crown
+mashlands_head_jeweled_crown_description		Feel like a royal
+mashlands_head_jeweled_crown_status		Creating Jeweled Crown
+mashlands_head_leather_cap_name		Leather Cap
+mashlands_head_leather_cap_description		A basic cap
+mashlands_head_leather_cap_status		Creating Leather Cap
+mashlands_head_lucky_goggles_name		Lucky Goggles
+mashlands_head_lucky_goggles_description		Great visibility
+mashlands_head_lucky_goggles_status		Creating Lucky Goggles
+mashlands_head_mysterious_amulet_name		Mysterious Amulet
+mashlands_head_mysterious_amulet_description		Should I wear this?
+mashlands_head_mysterious_amulet_status		Creating Mysterious Amulet
+mashlands_head_necromancer_hood_name		Necromancer's Hood
+mashlands_head_necromancer_hood_description		I want to take a peek under it
+mashlands_head_necromancer_hood_status		Creating Necromancer's Hood
+mashlands_head_ranger_hat_name		Ranger Hat
+mashlands_head_ranger_hat_description		Stylish
+mashlands_head_ranger_hat_status		Creating Ranger Hat
+mashlands_head_witch_hat_name		Witch's Hat
+mashlands_head_witch_hat_description		Pointy and stylish
+mashlands_head_witch_hat_status		Creating Witch's Hat
+mashlands_location_castle_ruins_name		Castle Ruins
+mashlands_location_castle_ruins_description		Mostly rubble
+mashlands_location_castle_ruins_status		Searching Castle Ruins
+mashlands_location_secret_hideout_name		Secret Hideout
+mashlands_location_secret_hideout_description		Wonder what I'll find
+mashlands_location_secret_hideout_status		Unveiling secrets..
+mashlands_rumor_secret_hideout_description		Holding a map close to a flickering fire might reveal some secrets
+mashlands_rumor_secret_hideout_status		Invisible ink becomes intelligible
+mashlands_resource_bone_dust_name		Bone Dust
+mashlands_resource_bone_dust_description		Don't sniff this
+mashlands_resource_bone_dust_status		Crushing to dust..
+mashlands_resource_decompose_corpse_name		Decompose corpse
+mashlands_resource_decompose_corpse_description		Decomposing a corpse - Unused
+mashlands_resource_decompose_corpse_status		Decomposing.. - Unused
+mashlands_rumor_decompose_corpse_description		Maybe there's a way to accelerate the decomposing of a body..
+mashlands_rumor_decompose_corpse_status		Decomposing..
+mashlands_resource_diamond_name		Diamond
+mashlands_resource_diamond_description		My wife's favorite
+mashlands_resource_leather_name		Leather
+mashlands_resource_leather_description		Ready to be processed
+mashlands_resource_leather_status		Deconstructing..
+mashlands_resource_leather_deconstruction_name		Deconstructing Loot
+mashlands_rumor_leather_deconstruction_description		I've heard it's possible to break down some non-craftable equipment for parts
+mashlands_resource_mithril_bar_name		Mithril Bar
+mashlands_resource_mithril_bar_description		A magical and mythical material
+mashlands_resource_mithril_bar_status		Imbuing magic..
+mashlands_resource_mysterious_gem_name		Mysterious Gem
+mashlands_resource_mysterious_gem_description		.. Odd ..
+mashlands_resource_steel_bar_name		Steel Bar
+mashlands_resource_steel_bar_description		A very strong material
+mashlands_structure_builder_status		Building..
+mashlands_structure_coin_vault_name		Coin Vault
+mashlands_structure_coin_vault_description		Safe storage for your coins
+mashlands_structure_coin_vault_description_long		A vault that can hold a lot of Coins. Click to remove Coins. Contains [count]/[max_count][goldicon]
+mashlands_structure_coin_vault_status		Building a Coin Vault
+mashlands_structure_crusher_name		Crusher
+mashlands_structure_crusher_description		Used for crushing
+mashlands_structure_crusher_status		Building a Crusher
+mashlands_structure_deconstruction_table_name		Deconstruction Table
+mashlands_structure_deconstruction_table_description		Take apart your loot
+mashlands_structure_deconstruction_table_status		Building a Deconstruction Table
+mashlands_structure_distribution_centre_name		Distribution Centre
+mashlands_structure_distribution_centre_description		Increases your Card Cap by 50
+mashlands_structure_distribution_centre_status		Building a Distribution Centre
+mashlands_structure_guillotine_name		Guillotine
+mashlands_structure_guillotine_description		So long, farewell, adieu and goodbye
+mashlands_structure_guillotine_status		Building a Guillotine
+mashlands_structure_library_name		Library
+mashlands_structure_library_description		A place for reading. Gives you a new idea for every [max_count] Coins you gift them.
+mashlands_structure_library_status		Building a Library
+mashlands_structure_library_description_long		A place for reading. Gives you a new Idea for every [max_count] Coins you gift them. [count]/[max_count] Coins given.
+mashlands_structure_library_description_completed		A place for reading. You've read all their books.
+mashlands_rumor_library_description		The books in the Library are fascinating. It takes a while for a villager to read through them, but you keep your progress even when distracted.
+mashlands_structure_pressure_chamber_name		Pressure Chamber
+mashlands_structure_pressure_chamber_description		Fatal when not used properly; but no pressure!
+mashlands_structure_pressure_chamber_status		Building a Pressure Chamber
+mashlands_wandering_trader_name		Wandering Trader
+mashlands_wandering_trader_description		Give me 8 coins and I'll give you a nice Card or trade me a Diamond for something special!
+mashlands_weapon_assassin_dagger_name		Assassin's Dagger
+mashlands_weapon_assassin_dagger_description		Short but deadly
+mashlands_weapon_assassin_dagger_status		Creating Assassin's Dagger
+mashlands_weapon_banner_name		Banner
+mashlands_weapon_banner_description		Everyone rally .. to me!!
+mashlands_weapon_banner_status		Creating Banner
+mashlands_weapon_composite_bow_name		Composite Bow
+mashlands_weapon_composite_bow_description		Makes you feel like Robin Hood 2.0
+mashlands_weapon_composite_bow_status		Creating Composite Bow
+mashlands_weapon_corrupted_chakram_name		Corrupted Chakram
+mashlands_weapon_corrupted_chakram_description		Looks ominous
+mashlands_weapon_corrupted_chakram_status		Creating Corrupted Chakram
+mashlands_weapon_greatsword_name		Greatsword
+mashlands_weapon_greatsword_description		Probably compensation for something
+mashlands_weapon_greatsword_status		Creating Greatsword
+mashlands_weapon_mysterious_ring_name		Mysterious Ring
+mashlands_weapon_mysterious_ring_description		This looks mysteriously powerful
+mashlands_weapon_mysterious_ring_status		Creating Mysterious Ring
+mashlands_weapon_trident_storm_name		Trident of the Storm
+mashlands_weapon_trident_storm_description		Full of lightning
+mashlands_weapon_trident_storm_status		Creating Trident of the Storm
+mashlands_pressure_chamber_status		Pressurizing..
+mashlands_crusher_status		Crushing..

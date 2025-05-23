@@ -1,0 +1,20 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_body_tower_shield",
+    "nameTerm": "mashlands_body_tower_shield_name",
+    "descriptionTerm": "mashlands_body_tower_shield_description",
+    "icon": "tower_shield.png",
+    "value": 6,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Torso",
+    "_MyStats": {
+        "MaxHealth": 0,
+        "AttackSpeedIncrement": -2,
+        "HitChanceIncrement": -1, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 5,
+        "SpecialHits": [
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_guillotine",
+    "nameTerm": "mashlands_structure_guillotine_name",
+    "descriptionTerm": "mashlands_structure_guillotine_description",
+    "icon": "guillotine.png",
+    "value": 3,
+    "type": "Structures",
+    "script": "TestingModNS.Guillotine",
+    "_IsBuilding": true
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_spiked_shield",
+    "nameTerm": "mashlands_body_spiked_shield_name",
+    "group": "Military",
+    "subprints": [
+      {
+        "RequiredCards": "iron_shield, spiked_plank, smithy",
+        "ResultCard": "mashlands_body_spiked_shield",
+        "Time": 15,
+        "StatusTerm": "mashlands_body_spiked_shield_status"
+      }
+    ]
+  }

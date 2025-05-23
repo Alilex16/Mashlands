@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_library",
+    "nameTerm": "mashlands_structure_library_name",
+    "descriptionTerm": "mashlands_structure_library_description",
+    "icon": "library.png",
+    "value": 5,
+    "type": "Structures",
+    "script": "TestingModNS.Library",
+    "_IsBuilding": true
+}

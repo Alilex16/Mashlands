@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_coin_vault",
+    "nameTerm": "mashlands_structure_coin_vault_name",
+    "group": "Basic",
+    "subprints": [
+        {
+          "RequiredCards": "gold, gold, gold, gold, gold, plank, plank, plank, plank, plank, mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, builder",
+          "ResultCard": "mashlands_structure_coin_vault",
+          "Time": 30,
+          "StatusTerm": "mashlands_structure_coin_vault_status"
+        }
+    ]
+}

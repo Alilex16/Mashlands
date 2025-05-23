@@ -1,0 +1,30 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_lucky_goggles",
+    "nameTerm": "mashlands_head_lucky_goggles_name",
+    "descriptionTerm": "mashlands_head_lucky_goggles_description",
+    "icon": "lucky_goggles.png",
+    "value": 7,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": -3,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 3, 
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 5.0,
+                "HitType": 2,
+                "Target": 1
+            },
+            {
+                "Chance": 5.0,
+                "HitType": 10,
+                "Target": 1
+            }
+        ]
+    }
+}

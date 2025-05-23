@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_mysterious_gem",
+    "nameTerm": "mashlands_resource_mysterious_gem_name",
+    "group": "Resources",
+    "subprints": [
+        {
+          "RequiredCards": "dark_amulet, amulet_of_forest, amulet_of_mountain, mashlands_structure_pressure_chamber",
+          "ResultCard": "mashlands_resource_mysterious_gem",
+          "Time": 90,
+          "StatusTerm": "mashlands_resource_mysterious_gem_status"
+        }
+    ]
+}

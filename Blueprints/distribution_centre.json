@@ -1,0 +1,20 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_distribution_centre",
+    "nameTerm": "mashlands_structure_distribution_centre_name",
+    "group": "Building",
+    "subprints": [
+        {
+          "RequiredCards": "brick, brick, brick, brick, brick, mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, builder",
+          "ResultCard": "mashlands_structure_distribution_centre",
+          "Time": 55,
+          "StatusTerm": "mashlands_structure_distribution_centre_status"
+        },
+        {
+          "RequiredCards": "warehouse, warehouse, warehouse, brick, brick, brick, brick, brick, mashlands_resource_steel_bar, mashlands_resource_steel_bar, mashlands_resource_steel_bar, builder",
+          "ResultCard": "mashlands_structure_distribution_centre",
+          "Time": 45,
+          "StatusTerm": "mashlands_structure_distribution_centre_status"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_assassin_dagger",
+    "nameTerm": "mashlands_weapon_assassin_dagger_name",
+    "group": "Military",
+    "subprints": [
+        {
+          "RequiredCards": "stick, mashlands_resource_steel_bar, smithy",
+          "ResultCard": "mashlands_weapon_assassin_dagger",
+          "Time": 15,
+          "StatusTerm": "mashlands_weapon_assassin_dagger_status"
+        }
+    ]
+}

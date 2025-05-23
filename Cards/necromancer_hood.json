@@ -1,0 +1,25 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_head_necromancer_hood",
+    "nameTerm": "mashlands_head_necromancer_hood_name",
+    "descriptionTerm": "mashlands_head_necromancer_hood_description",
+    "icon": "necromancer_hood.png",
+    "value": 5,
+    "type": "Equipable",
+    "script": "Equipable",
+    "_EquipableType": "Head",
+    "_MyStats": {
+        "MaxHealth": 5,
+        "AttackSpeedIncrement": 0,
+        "HitChanceIncrement": 1,
+        "AttackDamageIncrement": 0,
+        "DefenceIncrement": 0,
+        "SpecialHits": [
+            {
+                "Chance": 15.0,
+                "HitType": 5,
+                "Target": 1
+            }
+        ]
+    }
+}
