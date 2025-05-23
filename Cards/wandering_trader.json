@@ -6,7 +6,7 @@
     "icon": "wandering_trader.png",
     "value": -1,
     "type": "Harvestable",
-    "script": "TestingModNS.WanderingTrader",
+    "script": "MashlandsNS.WanderingTrader",
     "_MyCardBag":
     {
         "CardBagType": 0,

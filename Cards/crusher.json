@@ -6,6 +6,6 @@
     "icon": "crusher.png",
     "value": 8,
     "type": "Structures",
-    "script": "TestingModNS.Crusher",
+    "script": "MashlandsNS.Crusher",
     "_IsBuilding": true
 }

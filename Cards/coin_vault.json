@@ -7,6 +7,6 @@
     "value": 0,
     "type": "Structures",
     "PickupSoundGroup": "Heavy",
-    "script": "TestingModNS.CoinVault",
+    "script": "MashlandsNS.CoinVault",
     "_IsBuilding": true
 }

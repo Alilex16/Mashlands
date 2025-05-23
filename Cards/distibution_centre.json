@@ -6,6 +6,6 @@
     "icon": "distribution_centre.png",
     "value": 18,
     "type": "Structures",
-    "script": "TestingModNS.DistributionCentre",
+    "script": "MashlandsNS.DistributionCentre",
     "_IsBuilding": true
 }

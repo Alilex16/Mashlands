@@ -6,6 +6,6 @@
     "icon": "library.png",
     "value": 5,
     "type": "Structures",
-    "script": "TestingModNS.Library",
+    "script": "MashlandsNS.Library",
     "_IsBuilding": true
 }

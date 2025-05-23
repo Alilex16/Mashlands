@@ -6,7 +6,7 @@
     "icon": "guinea_pig.png",
     "value": -1,
     "type": "Mobs",
-    "script": "TestingModNS.GuineaPig",
+    "script": "MashlandsNS.GuineaPig",
 
     "_IsBreedable": true,
     "_MoveTime": -1,

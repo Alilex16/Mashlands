@@ -6,6 +6,6 @@
     "icon": "guillotine.png",
     "value": 3,
     "type": "Structures",
-    "script": "TestingModNS.Guillotine",
+    "script": "MashlandsNS.Guillotine",
     "_IsBuilding": true
 }

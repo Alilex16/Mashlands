@@ -30,7 +30,7 @@ namespace MashlandsNS
 
         public void Awake()
         {
-            Harmony.PatchAll(typeof(TestingMod));
+            Harmony.PatchAll(typeof(Mashlands));
 
             SokLoc.instance.LoadTermsFromFile(System.IO.Path.Combine(this.Path, "localization.tsv"));
         }

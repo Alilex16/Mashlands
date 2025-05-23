@@ -6,6 +6,6 @@
     "icon": "deconstruction_table.png",
     "value": 7,
     "type": "Structures",
-    "script": "TestingModNS.DeconstructionTable",
+    "script": "MashlandsNS.DeconstructionTable",
     "_IsBuilding": true
 }

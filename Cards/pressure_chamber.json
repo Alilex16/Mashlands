@@ -6,6 +6,6 @@
     "icon": "pressure_chamber.png",
     "value": 8,
     "type": "Structures",
-    "script": "TestingModNS.PressureChamber",
+    "script": "MashlandsNS.PressureChamber",
     "_IsBuilding": true
 }
