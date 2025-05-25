@@ -1,0 +1,20 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_magic_dust",
+    "nameTerm": "mashlands_resource_magic_dust_name",
+    "group": "Resources",
+    "subprints": [
+        {
+            "RequiredCards": "mashlands_resource_bone_dust, mage",
+            "ResultCard": "magic_dust",
+            "Time": 60,
+            "StatusTerm": "mashlands_resource_magic_dust_status"
+        },
+        {
+            "RequiredCards": "mashlands_resource_bone_dust, wizard",
+            "ResultCard": "magic_dust",
+            "Time": 60,
+            "StatusTerm": "mashlands_resource_magic_dust_status"
+        }
+    ]
+}

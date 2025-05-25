@@ -9,24 +9,31 @@ namespace MashlandsNS
     {
         [HarmonyPostfix]
         [HarmonyPatch(typeof(WorldManager), nameof(WorldManager.CardCapIncrease))]
-        public static void WorldManager__Testing(WorldManager __instance, GameBoard board, ref int __result)
+        public static void WorldManager__CardCapStructure(WorldManager __instance, GameBoard board, ref int __result)
         {
             __result += __instance.GetCardCount("mashlands_structure_distribution_centre", board) * 50;
         }
 
         [HarmonyPostfix]
         [HarmonyPatch(typeof(EndOfMonthCutscenes), nameof(EndOfMonthCutscenes.SpecialEvents))]
-        public static void SpecialEvent__Testing()
+        public static void SpecialEvent__WanderingTrader()
         {
             bool spawnWanderingTrader = (UnityEngine.Random.value <= 0.1f &&  WorldManager.instance.CurrentMonth >= 8 &&  WorldManager.instance.CurrentMonth % 2 == 0) ||  WorldManager.instance.CurrentMonth == 24;
+
+            if (WorldManager.instance.CurrentBoard.Id == "cities")
+            {
+                spawnWanderingTrader = false;
+            }
 
             if (spawnWanderingTrader)
             {
                 Vector3 pos_random = WorldManager.instance.GetRandomSpawnPosition();
                 CardData cardData0 = WorldManager.instance.CreateCard(pos_random, "mashlands_wandering_trader", faceUp: true, checkAddToStack: false);
                 GameCamera.instance.TargetPositionOverride = cardData0.transform.position;
+                spawnWanderingTrader = false;
             }
         }
+
 
         public void Awake()
         {
@@ -39,9 +46,6 @@ namespace MashlandsNS
         {
             // Seeking Wisdom(1)
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.BasicIdea, "mashlands_blueprint_executing_villager", 1);
-
-            // Island of Ideas(1), Island of Ideas(4)
-            WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.Island_BasicIdea, "mashlands_blueprint_trident_storm", 1);
 
             // Seeking Wisdom(3), Reap&Sow(3), Logic and Reason(1)
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.BasicBuildingIdea, "mashlands_blueprint_library", 1);
@@ -57,6 +61,10 @@ namespace MashlandsNS
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.EquipmentBlueprints, "mashlands_blueprint_composite_bow", 1);
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.EquipmentBlueprints, "mashlands_blueprint_steel_chainplate", 1);
 
+            // Island Insight(1)
+            WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.Island_AdvancedIdea, "mashlands_blueprint_lucky_goggles", 1);
+            WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.Island_AdvancedIdea, "mashlands_blueprint_trident_storm", 1);
+            
 
             Harvestable old_village = (Harvestable)WorldManager.instance.GetCardPrefab("old_village");
 		    old_village.MyCardBag.Chances.Add(new CardChance("mashlands_resource_leather", 2));
@@ -104,7 +112,7 @@ namespace MashlandsNS
                 {
                     canClickPet = false;
                     
-                    if (WorldManager.instance.CurrentBoard.Id == "island")
+                    if (WorldManager.instance.CurrentBoard.Id == "greed")
                     {
                         CardData cardData1 = WorldManager.instance.CreateCard(MyGameCard.transform.position, "grape", faceUp: true, checkAddToStack: true);
                         WorldManager.instance.CreateSmoke(cardData1.transform.position);
@@ -158,23 +166,6 @@ namespace MashlandsNS
         }
     }
 
-
-    public class PressureChamber : CardData
-    {
-        public override bool DetermineCanHaveCardsWhenIsRoot => true;
-
-        public override bool CanHaveCardsWhileHasStatus()
-        {
-            return true;
-        }
-
-        protected override bool CanHaveCard(CardData otherCard)
-        {
-            return otherCard.MyCardType == CardType.Resources || otherCard.MyCardType == CardType.Equipable;
-        }
-    }
-
-
     public class DeconstructionTable : CardData
     {
         public override bool DetermineCanHaveCardsWhenIsRoot => true;
@@ -196,6 +187,23 @@ namespace MashlandsNS
         protected override bool CanHaveCard(CardData otherCard)
         {
             return otherCard.Id == "shed" || otherCard.Id == "warehouse" || otherCard.Id == "lighthouse" || otherCard.Id == "mashlands_structure_distribution_centre";
+        }
+
+    }
+
+
+    public class PressureChamber : CardData
+    {
+        public override bool DetermineCanHaveCardsWhenIsRoot => true;
+
+        public override bool CanHaveCardsWhileHasStatus()
+        {
+            return true;
+        }
+
+        protected override bool CanHaveCard(CardData otherCard)
+        {
+            return otherCard.MyCardType == CardType.Resources || otherCard.MyCardType == CardType.Equipable;
         }
     }
 
@@ -221,7 +229,7 @@ namespace MashlandsNS
 
         public void Awake()
         {
-            BlueprintDrops = ["mashlands_blueprint_bone_dust", "mashlands_blueprint_flint", "mashlands_blueprint_steel_bar", "mashlands_blueprint_mithril_bar"];
+            BlueprintDrops = ["mashlands_blueprint_bone_dust", "mashlands_blueprint_magic_dust", "mashlands_blueprint_flint", "mashlands_blueprint_steel_bar", "mashlands_blueprint_mithril_bar"];
             Extensions.Shuffle(BlueprintDrops);
         }
 
@@ -382,7 +390,7 @@ namespace MashlandsNS
 
         public override void Clicked()
         {
-            int a = 10;
+            int a = 5;
             if (CoinCount > 0)
             {
                 int num = Mathf.Min(a, CoinCount);
@@ -446,6 +454,10 @@ namespace MashlandsNS
             {
                 return true;
             }
+            if (WorldManager.instance.BoughtWithShells(otherCard.MyGameCard, GoldToUse, checkStackAllSame: true) || WorldManager.instance.BoughtWithShellChest(otherCard.MyGameCard, GoldToUse))
+            {
+                return true; //
+            }
             if (otherCard.Id == "mashlands_resource_diamond")
             {
                 return true;
@@ -468,6 +480,16 @@ namespace MashlandsNS
                     WorldManager.instance.BuyWithChest(child, GoldToUse);
                     Buy();
                 }
+                else if (WorldManager.instance.BoughtWithShells(child, GoldToUse)) // 
+                {
+                    WorldManager.instance.RemoveCardsFromStackPred(child, GoldToUse, (GameCard x) => x.CardData.Id == "shell");
+                    Buy();
+                }
+                else if (WorldManager.instance.BoughtWithShellChest(child, GoldToUse)) //
+                {
+                    WorldManager.instance.BuyWithChest(child, GoldToUse);
+                    Buy();
+                }
                 else if (child.CardData.Id == "mashlands_resource_diamond")
                 {
                     WorldManager.instance.RemoveCardsFromStackPred(child, 1, (GameCard x) => x.CardData.Id == "mashlands_resource_diamond");
@@ -481,7 +503,6 @@ namespace MashlandsNS
         {
 	    	ICardId cardId = MyCardBag.GetCard(removeCard: false);
 		    WorldManager.instance.CreateCard(base.transform.position, cardId, faceUp: true, checkAddToStack: false).MyGameCard.SendIt();
-	    	ItemsBought++;
         }
 
         private void BuyDiamond()
@@ -499,7 +520,7 @@ namespace MashlandsNS
             }
             
 		    WorldManager.instance.CreateCard(base.transform.position, cardId, faceUp: true, checkAddToStack: false).MyGameCard.SendIt();
-	    	ItemsBought++;
         }
     }
+
 }

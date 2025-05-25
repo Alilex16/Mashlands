@@ -6,7 +6,14 @@
     "icon": "coin_vault.png",
     "value": 0,
     "type": "Structures",
-    "PickupSoundGroup": "Heavy",
     "script": "MashlandsNS.CoinVault",
-    "_IsBuilding": true
+    "_PickupSoundGroup": "Heavy",
+    "_IsBuilding": true,
+    "_EnergyConnectors": [
+        {
+          "EnergyConnectionType": "input",
+          "EnergyConnectionStrength": 5,
+          "EnergyConnectionAmount": 3
+        }
+    ]
 }

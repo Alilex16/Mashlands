@@ -7,5 +7,12 @@
     "value": 7,
     "type": "Structures",
     "script": "MashlandsNS.DeconstructionTable",
-    "_IsBuilding": true
+    "_IsBuilding": true,
+    "_EnergyConnectors": [
+        {
+          "EnergyConnectionType": "output",
+          "EnergyConnectionStrength": 5,
+          "EnergyConnectionAmount": 1
+        }
+    ]
 }

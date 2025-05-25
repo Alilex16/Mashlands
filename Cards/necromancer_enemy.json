@@ -5,7 +5,7 @@
     "descriptionTerm": "mashlands_enemy_necromancer_description",
     "icon": "necromancer_enemy.png",
     "value": -1,
-    "type": "Enemy",
+    "type": "Mobs",
     "script": "Enemy",
 
     "_MoveTime": 1,
@@ -27,7 +27,15 @@
             },
             {
                 "Id": "old_tome",
-                "Chance": 2,
+                "Chance": 3,
+                "HasMaxCount": 0,
+                "MaxCountToGive": 1,
+                "HasPrerequisiteCard": 0,
+                "PrerequisiteCardId": ""
+            },
+            {
+                "Id": "map",
+                "Chance": 5,
                 "HasMaxCount": 0,
                 "MaxCountToGive": 1,
                 "HasPrerequisiteCard": 0,

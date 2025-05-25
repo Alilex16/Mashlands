@@ -3,6 +3,7 @@
     "id": "mashlands_blueprint_steel_bar",
     "nameTerm": "mashlands_resource_steel_bar_name",
     "group": "Resources",
+    "needsExactMatch": false,
     "subprints": [
         {
             "RequiredCards": "iron_bar, charcoal, mashlands_structure_pressure_chamber",

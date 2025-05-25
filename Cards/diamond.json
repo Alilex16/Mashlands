@@ -4,10 +4,9 @@
     "nameTerm": "mashlands_resource_diamond_name",
     "descriptionTerm": "mashlands_resource_diamond_description",
     "icon": "diamond.png",
-    "value": 6,
+    "value": 30,
     "type": "Resources",
     "script": "Resource",
-    "_IsFoil": true,
     "_IsShiny": true,
     "_HasUniquePalette": true,
     "_MyPalette": {

@@ -22,7 +22,7 @@
             },
             {
                 "Id": "mashlands_resource_steel_bar",
-                "Chance": 9,
+                "Chance": 11,
                 "HasMaxCount": 0,
                 "MaxCountToGive": 1,
                 "HasPrerequisiteCard": 0,
@@ -30,7 +30,7 @@
             },
             {
                 "Id": "gold_bar",
-                "Chance": 11,
+                "Chance": 6,
                 "HasMaxCount": 0,
                 "MaxCountToGive": 1,
                 "HasPrerequisiteCard": 0,
@@ -53,7 +53,7 @@
                 "PrerequisiteCardId": ""
             },
             {
-                "Id": "mashlands_body_parrying_dagger",
+                "Id": "mashlands_head_ranger_hat",
                 "Chance": 2,
                 "HasMaxCount": 0,
                 "MaxCountToGive": 1,
@@ -61,7 +61,7 @@
                 "PrerequisiteCardId": ""
             },
             {
-                "Id": "mashlands_head_ranger_hat",
+                "Id": "mashlands_head_lucky_goggles",
                 "Chance": 2,
                 "HasMaxCount": 0,
                 "MaxCountToGive": 1,
@@ -77,14 +77,6 @@
                 "PrerequisiteCardId": ""
             },
             {
-                "Id": "bear_claw",
-                "Chance": 1,
-                "HasMaxCount": 0,
-                "MaxCountToGive": 1,
-                "HasPrerequisiteCard": 0,
-                "PrerequisiteCardId": ""
-            },
-            {
                 "Id": "dark_amulet",
                 "Chance": 1,
                 "HasMaxCount": 0,
@@ -93,8 +85,8 @@
                 "PrerequisiteCardId": ""
             },
             {
-                "Id": "mashlands_blueprint_lucky_goggles",
-                "Chance": 5,
+                "Id": "map",
+                "Chance": 1,
                 "HasMaxCount": 0,
                 "MaxCountToGive": 1,
                 "HasPrerequisiteCard": 0,

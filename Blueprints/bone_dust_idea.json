@@ -5,10 +5,10 @@
     "group": "Resources",
     "subprints": [
         {
-          "RequiredCards": "bone, any_villager",
-          "ResultCard": "mashlands_resource_bone_dust",
-          "Time": 20,
-          "StatusTerm": "mashlands_resource_bone_dust_status"
+            "RequiredCards": "bone, any_villager",
+            "ResultCard": "mashlands_resource_bone_dust",
+            "Time": 20,
+            "StatusTerm": "mashlands_resource_bone_dust_status"
         },
         {
             "RequiredCards": "bone, mashlands_structure_crusher",

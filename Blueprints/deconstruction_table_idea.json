@@ -5,10 +5,10 @@
     "group": "Building",
     "subprints": [
         {
-          "RequiredCards": "plank, plank, plank, mashlands_resource_steel_bar, mashlands_resource_steel_bar, builder",
-          "ResultCard": "mashlands_structure_deconstruction_table",
-          "Time": 30,
-          "StatusTerm": "mashlands_structure_deconstruction_table_status"
+            "RequiredCards": "plank, plank, plank, plank, mashlands_resource_steel_bar, builder",
+            "ResultCard": "mashlands_structure_deconstruction_table",
+            "Time": 30,
+            "StatusTerm": "mashlands_structure_deconstruction_table_status"
         }
     ]
 }

@@ -5,6 +5,7 @@
     "group": "Basic",
     "hideFromIdeasTab": true,
     "hideFromCardopedia": true,
+    "needsExactMatch": false,
     "subprints": [
         {
             "RequiredCards": "bunny_hat, mashlands_structure_deconstruction_table",
@@ -38,6 +39,19 @@
             "RequiredCards": "quiver, mashlands_structure_deconstruction_table",
             "ResultCard": "mashlands_resource_leather",
             "ExtraResultCards": "rope",
+            "Time": 15,
+            "StatusTerm": "mashlands_resource_leather_status"
+        },
+        {
+            "RequiredCards": "pirate_sword, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_steel_bar",
+            "Time": 25,
+            "StatusTerm": "mashlands_resource_leather_status"
+        },
+        {
+            "RequiredCards": "mashlands_head_necromancer_hood, mashlands_structure_deconstruction_table",
+            "ResultCard": "mashlands_resource_leather",
+            "ExtraResultCards": "fabric",
             "Time": 15,
             "StatusTerm": "mashlands_resource_leather_status"
         }

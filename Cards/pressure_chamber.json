@@ -7,5 +7,18 @@
     "value": 8,
     "type": "Structures",
     "script": "MashlandsNS.PressureChamber",
-    "_IsBuilding": true
+    "_PickupSoundGroup": "Heavy",
+    "_IsBuilding": true,
+    "_EnergyConnectors": [
+        {
+          "EnergyConnectionType": "input",
+          "EnergyConnectionStrength": 5,
+          "EnergyConnectionAmount": 3
+        },
+        {
+            "EnergyConnectionType": "output",
+            "EnergyConnectionStrength": 5,
+            "EnergyConnectionAmount": 1
+          }
+    ]
 }
