@@ -5,10 +5,10 @@
     "group": "Building",
     "subprints": [
         {
-          "RequiredCards": "plank, plank, iron_bar, iron_bar, brick, brick, any_villager",
-          "ResultCard": "mashlands_structure_library",
-          "Time": 50,
-          "StatusTerm": "mashlands_structure_library_status"
+            "RequiredCards": "brick, plank, plank, plank, plank, iron_bar, any_villager",
+            "ResultCard": "mashlands_structure_library",
+            "Time": 45,
+            "StatusTerm": "mashlands_structure_library_status"
         }
     ]
 }

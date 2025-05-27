@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_medical_tent",
+    "nameTerm": "mashlands_structure_medical_tent_name",
+    "group": "Building",
+    "subprints": [
+        {
+            "RequiredCards": "brick, brick, plank, plank, fabric, fabric, any_villager",
+            "ResultCard": "mashlands_structure_medical_tent",
+            "Time": 20,
+            "StatusTerm": "mashlands_structure_medical_tent_status"
+        }
+    ]
+}

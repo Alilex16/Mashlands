@@ -1,7 +1,10 @@
 Term	Notes	English
 action_executing_villager_status		Execution in progress..
+action_harvest_orchard_status		Harvesting
+action_healing_combatant_status		Healing
 action_library_status		Reading
 action_petting_guinea_pig_status		Received pets
+mashlands_pressure_chamber_status		Pressurizing..
 mashlands_executing_villager_name		Execution
 mashlands_animal_guinea_pig_name		Guinea Pig
 mashlands_animal_guinea_pig_description		This floof needs some good petting
@@ -90,14 +93,22 @@ mashlands_structure_distribution_centre_name		Distribution Centre
 mashlands_structure_distribution_centre_description		Increases your Card Cap by 50
 mashlands_structure_distribution_centre_status		Building a Distribution Centre
 mashlands_structure_guillotine_name		Guillotine
-mashlands_structure_guillotine_description		"So long, farewell, adieu and goodbye"
+mashlands_structure_guillotine_description		So long, farewell, adieu and goodbye
 mashlands_structure_guillotine_status		Building a Guillotine
 mashlands_structure_library_name		Library
-mashlands_structure_library_description		A place for reading. Gives you a new idea for every [max_count] Coins you gift them.
+mashlands_structure_library_description		A place for reading. Invest time and Coins to discover new ideas.
 mashlands_structure_library_status		Building a Library
-mashlands_structure_library_description_long		A place for reading. Gives you a new Idea for every [max_count] Coins you gift them. [count]/[max_count] Coins given.
+mashlands_structure_library_description_long		A place for reading. Invest time and Coins to discover new ideas. Contains [count]/[max_count][goldicon]
 mashlands_structure_library_description_completed		A place for reading. You've read all their books.
-mashlands_rumor_library_description		"The books in the Library are fascinating. It takes a while for a villager to read through them, but you keep your progress even when distracted."
+mashlands_rumor_library_description		The books in the Library are fascinating. It takes a while for a villager to read through them, but you keep your progress even when distracted.
+mashlands_structure_medical_tent_name		Medical Tent
+mashlands_structure_medical_tent_description		Villagers can slowly recover their health here for a cost.
+mashlands_structure_medical_tent_description_long		Villagers can slowly recover their health here for 1 Coin per treatment. Contains [count]/[max_count][goldicon]
+mashlands_structure_medical_tent_status		Setting up a Medical Tent
+mashlands_structure_orchard_name		Orchard (Empty)
+mashlands_structure_orchard_description		An empty Orchard. Fill it with Berry Bushes, Apple Trees or Banana Trees
+mashlands_structure_orchard_name_override		Orchard ([resource])
+mashlands_structure_orchard_description_long		An Orchard filled with [amount] [resource]; [total] [result] are ripe for harvesting!
 mashlands_structure_pressure_chamber_name		Pressure Chamber
 mashlands_structure_pressure_chamber_description		Fatal when not used properly; but no pressure!
 mashlands_structure_pressure_chamber_status		Building a Pressure Chamber
@@ -124,5 +135,3 @@ mashlands_weapon_mysterious_ring_status		Creating Mysterious Ring
 mashlands_weapon_trident_storm_name		Trident of the Storm
 mashlands_weapon_trident_storm_description		A magical Trident that's full of lightning
 mashlands_weapon_trident_storm_status		Creating Trident of the Storm
-mashlands_pressure_chamber_status		Pressurizing..
-mashlands_crusher_status		Crushing..

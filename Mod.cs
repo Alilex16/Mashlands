@@ -61,6 +61,9 @@ namespace MashlandsNS
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.EquipmentBlueprints, "mashlands_blueprint_composite_bow", 1);
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.EquipmentBlueprints, "mashlands_blueprint_steel_chainplate", 1);
 
+            // Island of Ideas(1), Island of Ideas(4)
+            WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.Island_BasicIdea, "mashlands_blueprint_medical_tent", 1);
+
             // Island Insight(1)
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.Island_AdvancedIdea, "mashlands_blueprint_lucky_goggles", 1);
             WorldManager.instance.GameDataLoader.AddCardToSetCardBag(SetCardBagType.Island_AdvancedIdea, "mashlands_blueprint_trident_storm", 1);
@@ -72,6 +75,7 @@ namespace MashlandsNS
 
             Harvestable plains = (Harvestable)WorldManager.instance.GetCardPrefab("plains");
 		    plains.MyCardBag.Chances.Add(new CardChance("mashlands_location_castle_ruins", 1));
+		    plains.MyCardBag.Chances.Add(new CardChance("mashlands_blueprint_orchard", 1));
 
             Harvestable graveyard = (Harvestable)WorldManager.instance.GetCardPrefab("graveyard");
 		    graveyard.MyCardBag.Chances.Add(new CardChance("mashlands_rumor_decompose_corpse", 2));
@@ -217,7 +221,7 @@ namespace MashlandsNS
         public float ReadingTime = 150f;
 
         [Card]
-        public List<string> BlueprintDrops = new List<string>();
+        public List<string> BlueprintDrops = new List<string>() {"this_does_not_exist"}; // If list is empty, the idea description will find AllBlueprintsFound() as true
 
         // public List<AudioClip> InventionSound;
 
@@ -226,6 +230,7 @@ namespace MashlandsNS
         public int CoinCount;
 
         private string HeldCardId = "gold";
+    
 
         public void Awake()
         {
@@ -244,8 +249,7 @@ namespace MashlandsNS
                     {
                         return chest.HeldCardId == HeldCardId;
                     }
-                    return otherCard.MyCardType == CardType.Humans; // 
-                    // return false;
+                    return otherCard.MyCardType == CardType.Humans;
                 }
                 return true;
             }
@@ -260,7 +264,7 @@ namespace MashlandsNS
             }
             else if (CoinCount > 0)
             {
-                descriptionOverride = SokLoc.Translate("mashlands_structure_library_description_long", LocParam.Create("count", CoinCount.ToString()), LocParam.Create("max_count", ReadingCost.ToString()));
+                descriptionOverride = SokLoc.Translate("mashlands_structure_library_description_long", LocParam.Create("count", CoinCount.ToString()), LocParam.Create("max_count", ReadingCost.ToString()), LocParam.Create("goldicon", Icons.Gold));
             }
             else
             {
@@ -438,7 +442,315 @@ namespace MashlandsNS
                 WorldManager.instance.KillVillager(MyGameCard.Child.Combatable);
             }
         }
+    }
 
+    
+    public class MedicalTent : CardData
+    {
+        [ExtraData("coin_count")]
+        [HideInInspector]
+        public int CoinCount;
+
+        [ExtraData("max_count")]
+        public int MaxCoinCount = 100;
+
+        public int HealingAmountMax = 2;
+        public int HealingCost = 1;
+        public float HealingTime = 6f;
+
+        private string HeldCardId = "gold";
+
+        public override bool CanHaveCardsWhileHasStatus()
+        {
+            return true;
+        }
+
+        protected override bool CanHaveCard(CardData otherCard)
+        {
+            if (!(otherCard.Id == HeldCardId))
+            {
+                if (otherCard is Chest chest)
+                {
+                    return chest.HeldCardId == HeldCardId;
+                }
+                return otherCard.MyCardType == CardType.Humans;
+            }
+            return true;
+        }
+
+        public override void UpdateCardText()
+        {
+            if (CoinCount > 0)
+            {
+                descriptionOverride = SokLoc.Translate("mashlands_structure_medical_tent_description_long", LocParam.Create("count", CoinCount.ToString()), LocParam.Create("max_count", MaxCoinCount.ToString()), LocParam.Create("goldicon", Icons.Gold));
+            }
+            else
+            {
+                descriptionOverride = SokLoc.Translate("mashlands_structure_medical_tent_description", LocParam.Create("max_count", MaxCoinCount.ToString()));
+            }
+        }
+
+        public override void UpdateCard()
+        {
+            if (!MyGameCard.HasParent || MyGameCard.Parent.CardData is HeavyFoundation)
+            {
+                foreach (GameCard childCard in MyGameCard.GetChildCards())
+                {
+                    if (childCard.CardData is Chest chest)
+                    {
+                        if (chest.CoinCount < MaxCoinCount - CoinCount)
+                        {
+                            CoinCount += chest.CoinCount;
+                            chest.CoinCount = 0;
+                            WorldManager.instance.CreateSmoke(MyGameCard.transform.position);
+                            chest.MyGameCard.RemoveFromStack();
+                            chest.MyGameCard.SendIt();
+                        }
+                        else if (chest.CoinCount >= MaxCoinCount - CoinCount)
+                        {
+                            chest.CoinCount -= MaxCoinCount - CoinCount;
+                            CoinCount = MaxCoinCount;
+                            WorldManager.instance.CreateSmoke(MyGameCard.transform.position);
+                            chest.MyGameCard.RemoveFromStack();
+                            chest.MyGameCard.SendIt();
+                        }
+                    }
+                    if (!(childCard.CardData.Id != HeldCardId))
+                    {
+                        if (CoinCount >= MaxCoinCount)
+                        {
+                            childCard.RemoveFromParent();
+                            break;
+                        }
+                        childCard.DestroyCard(spawnSmoke: true);
+                        CoinCount++;
+                    }
+
+                    if (childCard.CardData is Combatable combatable)
+                    {
+                        if (combatable.HealthPoints >= combatable.ProcessedCombatStats.MaxHealth)
+                        {
+		                    GameCard theParent = childCard.Parent;
+		                    GameCard theChild = childCard.Child;
+
+                            childCard.RemoveFromStack();
+                            childCard.SendIt();
+
+                            theChild.SetParent(theParent);
+
+                            return;
+                        }
+                    }
+                }
+                
+                if (CoinCount >= HealingCost)
+                {
+                    if (MyGameCard.HasChild && MyGameCard.Child.CardData.MyCardType is CardType.Humans)
+                    {
+
+                        if (!MyGameCard.TimerRunning)
+                        {
+                            MyGameCard.StartTimer(HealingTime, HealCombatant, SokLoc.Translate("action_healing_combatant_status"), GetActionId("HealCombatant"));
+                        }
+                    }
+                    else
+                    {
+                        MyGameCard.CancelTimer(GetActionId("HealCombatant"));
+                    }
+                }
+            }
+            
+            base.UpdateCard();
+        }
+
+
+        [TimedAction("heal_combatant")]
+        public void HealCombatant()
+        {
+            GameCard child = MyGameCard.Child;
+
+            if (child != null && child.CardData is Combatable combatable)
+            {
+                int num = Mathf.Min(combatable.ProcessedCombatStats.MaxHealth - combatable.HealthPoints, HealingAmountMax);
+                combatable.HealthPoints += num;
+                combatable.CreateHitText($"+{num}", PrefabManager.instance.HealHitText);
+                CoinCount -= HealingCost;
+                combatable.UpdateCard();
+
+                // AudioManager.me.PlaySound2D(InventionSound, 1f, 0.1f);
+            }
+        }
+    }
+
+
+    public class Orchard : CardData
+    {
+        [ExtraData("resource_result_count")]
+        [HideInInspector]
+        public int ResourceResultCount;
+
+        [ExtraData("resource_count")]
+        [HideInInspector]
+        public int ResourceCount;
+
+        [ExtraData("resource_id")]
+        [HideInInspector]
+        public string HeldCardId = "";
+
+        [ExtraData("result_id")]
+        [HideInInspector]
+        public string HeldCardResultId = "";
+
+        public float HarvestTime = 8f;
+
+        [Term]
+        public string OrchardTermOverride = "mashlands_structure_orchard_name_override";
+
+        [Term]
+        public string OrchardDescriptionLong = "mashlands_structure_orchard_description_long";
+
+
+        public override bool DetermineCanHaveCardsWhenIsRoot => true;
+
+        public override bool CanHaveCardsWhileHasStatus()
+        {
+            return true;
+        }
+
+
+        protected override bool CanHaveCard(CardData otherCard)
+        {
+            if (string.IsNullOrEmpty(HeldCardId))
+            {
+                if (!MyGameCard.HasChild && otherCard.MyCardType is CardType.Humans)
+                {
+                    return otherCard.MyCardType == CardType.Humans;
+                }
+                
+                return otherCard.Id == "berrybush" || otherCard.Id == "apple_tree" || otherCard.Id == "banana_tree";
+            }
+
+            if (!(otherCard.Id == HeldCardId))
+            {
+                if (!MyGameCard.HasChild && otherCard.MyCardType is CardType.Humans)
+                {
+                    return otherCard.MyCardType == CardType.Humans;
+                }
+            }
+            else
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public override void UpdateCard()
+        {
+            if (!MyGameCard.HasParent || MyGameCard.Parent.CardData is HeavyFoundation)
+            {
+                if (ResourceResultCount <= 0 && !(string.IsNullOrEmpty(HeldCardId)))
+                {
+                    HeldCardId = "";
+                    HeldCardResultId = "";
+                    ResourceCount = 0;
+                }
+
+                foreach (GameCard childCard in MyGameCard.GetChildCards())
+                {
+                    if (string.IsNullOrEmpty(HeldCardId) && !(childCard.CardData.MyCardType is CardType.Humans))
+                    {
+                        HeldCardId = childCard.CardData.Id;
+                        HeldCardResultId = GetOrchardResultId();
+                    }
+                    if (!(childCard.CardData.Id != HeldCardId) && !(childCard.CardData.MyCardType is CardType.Humans))
+                    {
+                        childCard.DestroyCard(spawnSmoke: true);
+                        ResourceCount++;
+                        ResourceResultCount++;
+                        ResourceResultCount++;
+                        if (HeldCardId == "berrybush" || HeldCardId == "apple_tree")
+                        {
+                            ResourceResultCount++;
+                        }
+
+                    }
+                }
+
+                if (MyGameCard.HasChild && MyGameCard.Child.CardData.MyCardType is CardType.Humans)
+                {
+                    if (!MyGameCard.TimerRunning && ResourceResultCount > 0)
+                    {
+                        MyGameCard.StartTimer(HarvestTime, HarvestOrchard, SokLoc.Translate("action_harvest_orchard_status"), GetActionId("HarvestOrchard"));
+                    }
+                }
+                else
+                {
+                    MyGameCard.CancelTimer(GetActionId("HarvestOrchard"));
+                }
+            }
+		    base.UpdateCard();
+
+            if (string.IsNullOrEmpty(HeldCardId))
+            {
+                Icon = WorldManager.instance.GetCardPrefab(MyGameCard.CardData.Id).Icon;
+            }
+            else
+            {
+                Icon = WorldManager.instance.GetCardPrefab(HeldCardId).Icon;
+            }
+            MyGameCard.UpdateIcon();
+        }
+
+
+        public override void UpdateCardText()
+        {
+		    if (!string.IsNullOrEmpty(HeldCardId) && ResourceResultCount > 0)
+            {
+                CardData cardFromId = WorldManager.instance.GameDataLoader.GetCardFromId(HeldCardId);
+                nameOverride = SokLoc.Translate(OrchardTermOverride, LocParam.Create("resource", HeldCardResultId));
+
+                if (MyGameCard.IsHovered)
+                {
+                    descriptionOverride = SokLoc.Translate(OrchardDescriptionLong, LocParam.Create("resource", cardFromId.Name), LocParam.Create("amount", ResourceCount.ToString()), LocParam.Create("result", HeldCardResultId), LocParam.Create("total", ResourceResultCount.ToString()) );
+                }
+            }
+            else
+            {
+                nameOverride = null;
+                descriptionOverride = null;
+            }
+        }
+
+
+        [TimedAction("harvest_orchard")]
+        public void HarvestOrchard()
+        {
+            CardData cardData2 = WorldManager.instance.CreateCard(MyGameCard.transform.position, HeldCardResultId, faceUp: true, checkAddToStack: false);
+            WorldManager.instance.TrySendWithPipe(cardData2.MyGameCard, MyGameCard);
+
+            ResourceResultCount--;
+        }
+
+        public string GetOrchardResultId()
+        {
+            string result = "";
+
+            if (HeldCardId == "berrybush")
+            {
+                result = "berry";
+            }
+            else if (HeldCardId == "apple_tree")
+            {
+                result = "apple";
+            }
+            else if (HeldCardId == "banana_tree")
+            {
+                result = "banana";
+            }
+
+            return result;
+        }
     }
 
 

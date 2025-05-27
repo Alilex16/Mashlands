@@ -1,0 +1,23 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_orchard",
+    "nameTerm": "mashlands_structure_orchard_name",
+    "descriptionTerm": "mashlands_structure_orchard_description",
+    "icon": "soil",
+    "value": 8,
+    "type": "Structures",
+    "script": "MashlandsNS.Orchard",
+    "_IsBuilding": true,
+    "_EnergyConnectors": [
+        {
+          "EnergyConnectionType": "input",
+          "EnergyConnectionStrength": 5,
+          "EnergyConnectionAmount": 5
+        },
+        {
+            "EnergyConnectionType": "output",
+            "EnergyConnectionStrength": 5,
+            "EnergyConnectionAmount": 1
+          }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "$schema": "../schemas/card.schema.json",
+    "id": "mashlands_structure_medical_tent",
+    "nameTerm": "mashlands_structure_medical_tent_name",
+    "descriptionTerm": "mashlands_structure_medical_tent_description",
+    "icon": "medical_tent.png",
+    "value": 5,
+    "type": "Structures",
+    "script": "MashlandsNS.MedicalTent",
+    "_IsBuilding": true
+}

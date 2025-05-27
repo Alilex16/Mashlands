@@ -6,7 +6,7 @@
     "icon": "castle_ruins.png",
     "value": 5,
     "type": "Locations",
-    "script": "Harvestable",
+    "script": "CombatableHarvestable",
     "_StatusTerm": "mashlands_location_castle_ruins_status",
     "_IsUnlimited": 1,
     "_HarvestTime": 60.0,
@@ -137,6 +137,5 @@
             }
         ]
     },
-    "RequiredVillagerCount": 1
+    "_RequiredVillagerCount": 1
 }
-  

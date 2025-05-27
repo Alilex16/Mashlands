@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/blueprint.schema.json",
+    "id": "mashlands_blueprint_orchard",
+    "nameTerm": "mashlands_structure_orchard_name",
+    "group": "Building",
+    "subprints": [
+        {
+            "RequiredCards": "soil, soil, plank, plank, plank, plank, any_villager",
+            "ResultCard": "mashlands_structure_orchard",
+            "Time": 60,
+            "StatusTerm": "mashlands_structure_orchard_status"
+        }
+    ]
+}
