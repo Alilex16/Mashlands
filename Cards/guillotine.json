@@ -7,5 +7,6 @@
     "value": 3,
     "type": "Structures",
     "script": "MashlandsNS.Guillotine",
+    "_PickupSoundGroup": "Heavy",
     "_IsBuilding": true
 }

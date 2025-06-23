@@ -7,5 +7,6 @@
     "value": 18,
     "type": "Structures",
     "script": "MashlandsNS.DistributionCentre",
+    "_PickupSoundGroup": "Heavy",
     "_IsBuilding": true
 }

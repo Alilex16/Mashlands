@@ -86,7 +86,6 @@ namespace MashlandsNS
             Harvestable forest = (Harvestable)WorldManager.instance.GetCardPrefab("forest");
 		    forest.MyCardBag.Chances.Add(new CardChance("mashlands_animal_guinea_pig", 3));
 
-
             Harvestable berrybush = (Harvestable)WorldManager.instance.GetCardPrefab("berrybush");
 		    berrybush.MyCardBag.Chances.Add(new CardChance("mashlands_animal_guinea_pig", 3));
 
@@ -170,6 +169,7 @@ namespace MashlandsNS
         }
     }
 
+
     public class DeconstructionTable : CardData
     {
         public override bool DetermineCanHaveCardsWhenIsRoot => true;
@@ -192,7 +192,6 @@ namespace MashlandsNS
         {
             return otherCard.Id == "shed" || otherCard.Id == "warehouse" || otherCard.Id == "lighthouse" || otherCard.Id == "mashlands_structure_distribution_centre";
         }
-
     }
 
 
@@ -238,7 +237,6 @@ namespace MashlandsNS
             Extensions.Shuffle(BlueprintDrops);
         }
 
-        
         protected override bool CanHaveCard(CardData otherCard)
         {
             if (!AllBlueprintsFound())
@@ -420,7 +418,6 @@ namespace MashlandsNS
             return false;
         }
 
-
         public override void UpdateCard()
         {
             if (MyGameCard.HasChild && MyGameCard.Child.CardData.MyCardType is CardType.Humans)
@@ -563,7 +560,6 @@ namespace MashlandsNS
             base.UpdateCard();
         }
 
-
         [TimedAction("heal_combatant")]
         public void HealCombatant()
         {
@@ -702,17 +698,17 @@ namespace MashlandsNS
             MyGameCard.UpdateIcon();
         }
 
-
         public override void UpdateCardText()
         {
 		    if (!string.IsNullOrEmpty(HeldCardId) && ResourceResultCount > 0)
             {
                 CardData cardFromId = WorldManager.instance.GameDataLoader.GetCardFromId(HeldCardId);
-                nameOverride = SokLoc.Translate(OrchardTermOverride, LocParam.Create("resource", HeldCardResultId));
+                CardData resultCardFromId = WorldManager.instance.GameDataLoader.GetCardFromId(HeldCardResultId);
+                nameOverride = SokLoc.Translate(OrchardTermOverride, LocParam.Create("resource", resultCardFromId.Name));
 
-                if (MyGameCard.IsHovered)
+                if (WorldManager.instance.HoveredCard == MyGameCard)
                 {
-                    descriptionOverride = SokLoc.Translate(OrchardDescriptionLong, LocParam.Create("resource", cardFromId.Name), LocParam.Create("amount", ResourceCount.ToString()), LocParam.Create("result", HeldCardResultId), LocParam.Create("total", ResourceResultCount.ToString()) );
+                    descriptionOverride = SokLoc.Translate(OrchardDescriptionLong, LocParam.Create("resource", cardFromId.Name), LocParam.Create("amount", ResourceCount.ToString()), LocParam.Create("result", resultCardFromId.Name), LocParam.Create("total", ResourceResultCount.ToString()) );
                 }
             }
             else
@@ -721,7 +717,6 @@ namespace MashlandsNS
                 descriptionOverride = null;
             }
         }
-
 
         [TimedAction("harvest_orchard")]
         public void HarvestOrchard()
@@ -834,5 +829,4 @@ namespace MashlandsNS
 		    WorldManager.instance.CreateCard(base.transform.position, cardId, faceUp: true, checkAddToStack: false).MyGameCard.SendIt();
         }
     }
-
 }

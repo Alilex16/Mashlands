@@ -7,6 +7,7 @@
     "value": 5,
     "type": "Locations",
     "script": "CombatableHarvestable",
+    "_PickupSoundGroup": "Heavy",
     "_StatusTerm": "mashlands_location_castle_ruins_status",
     "_IsUnlimited": 1,
     "_HarvestTime": 60.0,
@@ -136,6 +137,5 @@
                 "PrerequisiteCardId": ""
             }
         ]
-    },
-    "_RequiredVillagerCount": 1
+    }
 }

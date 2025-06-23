@@ -6,5 +6,6 @@
     "icon": "mithril_bar.png",
     "value": 7,
     "type": "Resources",
-    "script": "Resource"
+    "script": "Resource",
+    "_PickupSoundGroup": "Medium"
 }

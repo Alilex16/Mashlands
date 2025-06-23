@@ -7,5 +7,6 @@
     "value": 5,
     "type": "Structures",
     "script": "MashlandsNS.MedicalTent",
+    "_PickupSoundGroup": "Heavy",
     "_IsBuilding": true
 }

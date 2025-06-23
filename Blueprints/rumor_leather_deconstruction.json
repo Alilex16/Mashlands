@@ -44,7 +44,7 @@
         },
         {
             "RequiredCards": "pirate_sword, mashlands_structure_deconstruction_table",
-            "ResultCard": "mashlands_steel_bar",
+            "ResultCard": "mashlands_resource_steel_bar",
             "Time": 25,
             "StatusTerm": "mashlands_resource_leather_status"
         },

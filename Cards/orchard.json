@@ -7,6 +7,7 @@
     "value": 8,
     "type": "Structures",
     "script": "MashlandsNS.Orchard",
+    "_PickupSoundGroup": "Heavy",
     "_IsBuilding": true,
     "_EnergyConnectors": [
         {

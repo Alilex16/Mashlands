@@ -5,8 +5,10 @@
     "descriptionTerm": "mashlands_wandering_trader_description",
     "icon": "wandering_trader.png",
     "value": -1,
-    "type": "Harvestable",
+    "type": "Structures",
     "script": "MashlandsNS.WanderingTrader",
+    "_PickupSoundGroup": "Heavy",
+
     "_MyCardBag":
     {
         "CardBagType": 0,
